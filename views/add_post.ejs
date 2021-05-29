@@ -22,31 +22,43 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <form novalidate>
+          <form method="POST" action="/blog-post" class="tm-contact-form">
+              <div class="form-group floating-label-form-group controls">
+                <label>Post Author</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author"
+                  name="author"
+                  required
+                  data-validation-required-message="Please enter your name."
+                />
+                <p class="help-block text-danger"></p>
+            </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Post Title</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Name"
-                  id="name"
+                  placeholder="Post Title"
+                  name="title"
                   required
-                  data-validation-required-message="Please enter your name."
+                  data-validation-required-message="Please enter post title."
                 />
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
-                <label>Post Detail</label>
+                <label>Post Subtitle</label>
                 <textarea
                   rows="5"
                   class="form-control"
-                  placeholder="Message"
-                  id="message"
+                  placeholder="Post Subtitle"
+                  name="subtitle"
                   required
-                  data-validation-required-message="Please enter a message."
+                  data-validation-required-message="Please enter a subtitle."
                 ></textarea>
                 <p class="help-block text-danger"></p>
               </div>
@@ -58,7 +70,7 @@
               class="btn btn-primary"
               id="sendMessageButton"
             >
-              Send
+              Post
             </button>
           </form>
         </div>

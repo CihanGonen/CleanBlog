@@ -19,6 +19,7 @@
                 <%= post.dateCreated %></span
               >
             </div>
+            
           </div>
         </div>
       </div>
@@ -38,6 +39,21 @@
               airman's earth, if free men make it, will be truly round: a globe
               in practice, not in theory.
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <!-- Share box -->
+            <div class="tm-bg-gray tm-share-box pt-2">
+              <div class="text-center d-inline">
+                <a href="/posts/edit/<%= post._id %>" class="btn btn-primary p-2 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>	
+              </div>	
+              <div class="text-center d-inline">
+                <a href="" class="btn btn-danger p-2 tm-btn-animate tm-btn-download tm-icon-download"
+                  
+                onclick="return confirm('ARE YOU SURE?')"><span>Delete Post</span></a>	
+              </div>								
+            </div>
           </div>
         </div>
       </div>
